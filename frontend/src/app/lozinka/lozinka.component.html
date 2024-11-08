@@ -1,0 +1,25 @@
+<div [hidden]="krsnk==true">Da li se sećate stare lozinke? <input type="checkbox" [(ngModel)]="stara" value=false>Ne<br>
+Korisničko ime: <input type="text" [(ngModel)]="korisnicko_ime"><br></div>
+<div *ngIf="stara==false; else pitanje">
+Trenutna lozinka:<input type="password" [(ngModel)]="lozinka"><br>
+Nova lozinka:<input type="password" [(ngModel)]="nova1"><br>
+Ponovite novu lozinku:<input type="password" [(ngModel)]="nova2"><br>
+<button (click)="promeni()">Promeni lozinku</button><br>
+{{poruka}}
+</div>
+<ng-template #pitanje>
+<div [hidden]="krsnk==true">Prikaži sigurnosno pitanje:<button (click)="prikaz()">Sigurnosno pitanje</button><br>
+{{poruka2}}</div>
+<div *ngIf="krsnk==true && odgovorio==false">
+  {{korisnik.bezbednosno_pitanje}}
+  Odgovor:<input type="text" [(ngModel)]="odgovor"><br>
+  <button (click)="odgovori()">Odgovori</button><br>
+  {{poruka4}}
+</div>
+<div *ngIf="odgovorio==true">
+  Nova lozinka:<input type="password" [(ngModel)]="nova1"><br>
+  Ponovite novu lozinku:<input type="password" [(ngModel)]="nova2"><br>
+  <button (click)="promenaPitanje()">Promeni lozinku</button>
+  {{poruka3}}
+</div>
+</ng-template>

@@ -1,0 +1,49 @@
+<div class="meni"><a routerLink="../gost" (click)="navigate()">Profil</a>|<a routerLink="../gost-restorani" (click)="navigateRestorani()">Restorani</a>|<a routerLink="../gost-rezervacije" (click)="navigateRezervacije()">Rezervacije</a>|<a routerLink="../gost-dostave" (click)="navigateDostave()">Dostava hrane</a><br>
+</div>
+  <button (click)="odjava()">Odjava</button><br>
+<div [hidden]="pocetna==false">
+<img [src]="slika"> <button (click)="naSliku()">Izmeni</button><br>
+Ime:{{gost.ime}} <button (click)="naIme()">Izmeni</button><br>
+Prezime:{{gost.prezime}}  <button (click)="naPrezime()">Izmeni</button><br>
+Pol:{{gost.pol}} <button (click)="naPol()">Izmeni</button><br>
+Mejl:{{gost.email}} <button (click)="naMejl()">Izmeni</button><br>
+Telefon: {{gost.kontakt_telefon}} <button (click)="naTelefon()">Izmeni</button><br>
+Adresa:{{gost.adresa}} <button (click)="naAdresu()">Izmeni</button><br>
+Broj kreditne kartice:{{gost.broj_kreditne_kartice}} <button (click)="naKarticu()">Izmeni</button><br>
+</div>
+<div [hidden]="spol==false">
+<input type="radio" name="pol" value="M" [(ngModel)]="noviPol">Muški
+<input type="radio" name="pol" value="Z" [(ngModel)]="noviPol">Ženski<br>
+<button (click)="azurirajPol()">Azuriraj</button>
+</div>
+<div [hidden]="zaslika==false">
+<input type="file" (change)="naPromenuFajla($event)" accept="image/png, image/jpeg" #fileInput> {{porukaAzuriranje}}<br>
+<button [disabled]="dozvoli==false" (click)="azurirajSliku()">Azuriraj</button>
+</div>
+<div [hidden]="ime==false">
+<input type="text" [(ngModel)]="novoIme"><br>
+<button (click)="azurirajIme()">Azuriraj</button>
+</div>
+<div [hidden]="prezime==false">
+<input type="text" [(ngModel)]="novoPrezime"><br>
+<button (click)="azurirajPrezime()">Azuriraj</button>
+</div>
+<div [hidden]="mejl==false">
+<input type="text" [(ngModel)]="noviMejl"><br>
+<button (click)="azurirajMejl()">Azuriraj</button>
+{{porukaAzuriranje}}
+</div>
+<div [hidden]="telefon==false">
+<input type="text" [(ngModel)]="noviTelefon"><br>
+<button (click)="azurirajTelefon()">Azuriraj</button>
+{{porukaAzuriranje}}
+</div>
+<div [hidden]="adresa==false">
+<input type="text" [(ngModel)]="novaAdresa"><br>
+<button (click)="azurirajAdresu()">Azuriraj</button>
+</div>
+<div [hidden]="kartica==false">
+<input type="text" [(ngModel)]="novaKartica"><br>
+<button (click)="azurirajKarticu()">Azuriraj</button>
+{{porukaAzuriranje}}
+</div>

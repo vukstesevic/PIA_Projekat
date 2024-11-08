@@ -1,0 +1,37 @@
+<button (click)="odjava()">Odjava</button><br>
+<button (click)="nazad()">Nazad</button><br>
+
+<div *ngIf="aktuelne.length>0; else por">
+  <table>
+    <tr>
+      <th>Restoran</th>
+      <th>Status</th>
+      <th>Procenjeno vreme dostave</th>
+    </tr>
+    <tr *ngFor="let r of aktuelne">
+      <td>{{r.restoran}}</td>
+      <td>{{r.status}}</td>
+      <td [hidden]="r.status=='poslato'">{{r.vremeDostave}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #por>
+  <h2>Nemate aktuelnih dostava</h2>
+</ng-template>
+<div *ngIf="arhiva.length>0; else poruka">
+  <table>
+    <tr>
+      <th>Restoran</th>
+      <th>Datum</th>
+      <th>Iznos računa</th>
+    </tr>
+    <tr *ngFor="let r of arhiva">
+      <td>{{r.restoran}}</td>
+      <td>{{r.vreme | date: "dd-MM-yyyy"}}</td>
+      <td>{{r.cena}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #poruka>
+  <h2>Nemate arhiviranih dostava</h2>
+</ng-template>

@@ -1,0 +1,41 @@
+<button (click)="odjava()">Odjava</button><br>
+<button (click)="nazad()">Nazad</button><br>
+
+<table>
+  <tr *ngFor="let r of cekanje">
+    <td>{{r.vreme | date: "dd-MM-yyy HH:mm"}}</td>
+    <td>{{r.korisnik}}</td>
+    <td>{{r.brOsoba}}</td>
+    <td><button (click)="prihvati(r)">Potvrdi</button></td>
+    <td><button (click)="odbaci(r)">Odbij</button></td>
+  </tr>
+</table>
+
+<div [hidden]="potvrdi==false">
+  <select [(ngModel)]="brStola" [(ngModel)]="rezervacija.brStola">
+    <option *ngFor="let i of restoran.plan" [hidden]="i.redniBr==0 || i.brOsoba< rezervacija.brOsoba || niz[i.redniBr-1]==1">
+      {{i.redniBr}}
+    </option>
+  </select><br>
+  <canvas id=canvas #canvas width="300" height="300">
+  </canvas>
+  <button (click)="prihvatiRezervaciju()" [disabled]="brStola==0">Potvrdi</button>
+</div>
+
+<div [hidden]="odbij==false">
+ Komentar:<input type="text" [(ngModel)]="komentar">
+  <button (click)="odbijRezervaciju()" [disabled]="komentar==''">Odbij</button>
+</div>
+
+<hr>
+<table>
+  <tr *ngFor="let r of zaduzenja">
+    <td>{{r.vreme| date: "dd-MM-yyy HH:mm"}}</td>
+    <td>{{r.korisnik}}</td>
+    <td>{{r.brOsoba}}</td>
+    <td><button (click)="dosao(r)" [disabled]="r.mozeSePotvrditi==false">Došao</button></td>
+    <td><button (click)="nijeDosao(r)"[disabled]="r.mozeSePotvrditi==false">Nije došao</button></td>
+    <td><button (click)="produzi(r)"[disabled]="r.mozeSeProduziti==false">Produži rezervaciju</button></td>
+  </tr>
+</table>
+

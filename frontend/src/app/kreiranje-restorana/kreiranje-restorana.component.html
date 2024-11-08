@@ -1,0 +1,33 @@
+Dodaj restoran:<br>
+<br>
+Naziv: <input type="text" [(ngModel)]="naziv"><br>
+Tip: <input type="text" [(ngModel)]="tip"><br>
+Adresa: <input type="text" [(ngModel)]="adresa"><br>
+Kontakt telefon: <input type="text" [(ngModel)]="telefon"><br>
+Opis: <input type="text" [(ngModel)]="opis"><br>
+Početak radnog vremena: <input type="time" [(ngModel)]="radnoVreme[0]"><br>
+Kraj radnog vremena: <input type="time" [(ngModel)]="radnoVreme[1]"><br>
+<hr>
+Unošenje plana restorana:<br>
+<input type="radio" name="tip" value="Canvass" [(ngModel)]="tipPlan">Nacrtajte plan
+<input type="radio" name="tip" value="Fajl" [(ngModel)]="tipPlan">Učitajte plan iz fajla
+<hr>
+<div [hidden]="tipPlan!='Canvass'">
+Odaberite tip elementa:<input type="radio" name="tip" value="sto" [(ngModel)]="objekat.tip">Sto
+<input type="radio" name="tip" value="kuhinja" [(ngModel)]="objekat.tip">Kuhinja
+<input type="radio" name="tip" value="toalet" [(ngModel)]="objekat.tip">Toalet
+<div [hidden]="objekat.tip!='sto'">Unesite broj ljudi za stolom:<input type="number" [(ngModel)]="objekat.brOsoba" [min]="1" [value]="1"></div>
+<div>
+<canvas id=canvas #canvas width="300" height="300" (click)="koordinate($event)" >
+</canvas></div>
+<button (click)="dodajElement()" [disabled]="objekat.tip==''">Dodaj element</button>
+{{porukaPlan}}
+</div>
+<div [hidden]="tipPlan!='Fajl'">
+<input type="file" (change)="onFileChange($event)" #fileInput> {{JSONporuka}}
+</div>
+<hr>
+<button (click)="dodaj()">Dodaj restoran</button><br>
+{{poruka}}
+<hr>
+<button (click)="nazad()">Nazad</button>

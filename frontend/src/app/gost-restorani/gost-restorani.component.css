@@ -1,0 +1,15 @@
+.tabela-stil, .tabela-stil td, .tabela-stil th {
+  border: 1px solid black;
+}
+
+.tabela-stil {
+  border-collapse: collapse;
+}
+
+span {
+  color: #ccc; /* Boja za neaktivne zvezdice */
+}
+
+span.filled {
+  color: gold; /* Boja za aktivne zvezdice */
+}

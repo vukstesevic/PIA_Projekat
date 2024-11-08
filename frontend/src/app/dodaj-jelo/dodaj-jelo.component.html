@@ -1,0 +1,9 @@
+<button (click)="nazad()">Nazad</button>
+<hr>
+Dodaj novo jelo u {{restoran.naziv}}:<br>
+
+Naziv jela:<input type="text" [(ngModel)]="naziv"><br>
+Opis jela:<input type="text" [(ngModel)]="opis"><br>
+Cena jela:<input type="number" [(ngModel)]="cena" [min]="1" [value]="1"><br>
+Dodaj sliku:<input type="file" (change)="onFileSelected($event)"><br>
+<button (click)="dodaj()">Dodaj</button>

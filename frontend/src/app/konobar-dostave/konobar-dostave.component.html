@@ -1,0 +1,17 @@
+<button (click)="odjava()">Odjava</button><br>
+<button (click)="nazad()">Nazad</button><br>
+<table>
+  <tr *ngFor="let p of porudzbine">
+    <td>{{p.id}}</td>
+    <td>{{p.jela}}</td>
+    <td>{{p.cena}}</td>
+    <td>{{p.korisnik}}</td>
+    <td><select [(ngModel)]="vremeDostave">
+      <option value="30">20-30 minuta</option>
+      <option value="40">30-40 minuta</option>
+      <option value="60">50-60 minuta</option>
+    </select></td>
+    <td><button (click)="potvrdi(p.id)" [disabled]="vremeDostave==0">Potvrdi</button></td>
+    <td><button (click)="odbij(p.id)">Odbij</button></td>
+  </tr>
+</table>

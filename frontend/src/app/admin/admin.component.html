@@ -1,0 +1,113 @@
+Prikaži zahteve za registraciju:<button (click)="prikaziZahteve()">Prikaži zahteve</button><br>
+<div *ngIf="prikazZahteva==true">
+<table>
+  <tr *ngFor="let z of zahtevi" [class.nijeOdobren]="z.nijeOdobren==true">
+    <td>
+      {{z.korisnicko_ime}}
+    </td>
+    <td>
+      <button (click)="odobriZahtev(z)" [disabled]="z.nijeOdobren==true">Prihvati</button>
+    </td>
+    <td>
+      <button (click)="odbijZahtev(z)" [disabled]="z.nijeOdobren==true">Odbij</button>
+    </td>
+  </tr>
+</table>
+</div>
+<br>
+
+Prikaži registrivane goste:<button (click)="prikaziGoste()">Prikaži goste</button><br>
+<div *ngIf="prikazGostiju==true">
+<table>
+  <tr *ngFor="let g of gosti" [class.deaktiviran]="g.deaktiviran==true">
+    <td>
+      {{g.korisnicko_ime}}
+    </td>
+    <td>
+      {{g.ime}}
+    </td>
+    <td>
+      {{g.prezime}}
+    </td>
+    <td>
+      {{g.pol}}
+    </td>
+    <td>
+      {{g.email}}
+    </td>
+    <td>
+      {{g.kontakt_telefon}}
+    </td>
+    <td>
+      {{g.adresa}}
+    <td>
+      <button (click)="blokiraj(g)" [disabled]="g.deaktiviran==true">Deaktiviraj</button>
+    </td>
+    <td>
+      <button (click)="aktiviraj(g)" [disabled]="g.deaktiviran==false">Odblokiraj</button>
+    </td>
+    <td>
+      <button (click)="izmeni(g)">Promeni podatke</button>
+    </td>
+  </tr>
+</table>
+</div>
+<br>
+Prikaži sve konobare:<button (click)="prikaziKonobare()">Prikaži konobare</button><br>
+<div *ngIf="prikazKonobara==true">
+  <table>
+    <tr *ngFor="let g of konobari" [class.deaktiviran]="g.deaktiviran==true">
+      <td>
+      {{g.korisnicko_ime}}
+    </td>
+    <td>
+      {{g.ime}}
+    </td>
+    <td>
+      {{g.prezime}}
+    </td>
+    <td>
+      {{g.pol}}
+    </td>
+    <td>
+      {{g.email}}
+    </td>
+    <td>
+      {{g.kontakt_telefon}}
+    </td>
+    <td>
+      {{g.adresa}}
+    <td>
+      <button (click)="blokiraj(g)" [disabled]="g.deaktiviran==true">Deaktiviraj</button>
+    </td>
+    <td>
+      <button (click)="izmeni(g)">Promeni podatke</button>
+    </td>
+    </tr>
+  </table>
+</div>
+<br>
+Prikaži sve restorane:<button (click)="prikaziRestorane()">Prikaži restorane</button><br>
+<div *ngIf="prikazRestorana==true">
+  <table>
+    <tr *ngFor="let r of restorani" >
+      <td>
+      {{r.naziv}}
+    </td>
+    <td>
+      {{r.tip}}
+    </td>
+    <td>
+      {{r.adresa}}
+    </td>
+    <td>
+      <button (click)="dodajJelo(r)">Dodaj jelo</button>
+    </td>
+    </tr>
+  </table>
+</div>
+<br>
+Dodaj Konobara:<button (click)="zaKonobara()">Dodaj</button><br>
+<br>
+
+Dodaj Restoran:<button (click)="zaRestoran()">Dodaj</button>

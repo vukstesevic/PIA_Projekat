@@ -1,0 +1,39 @@
+Ukupan broj registrovanih korisnika: {{gosti.length}}<br>
+Broj rezervacija u proteklih 24h:{{brU24}}<br>
+Broj rezervacija u proteklih nedelju dana:{{brUnedelju}}<br>
+Broj rezervacija u proteklih mesec:{{brUmesecu}}<br>
+<br>
+<table class="tabela-stil">
+  <tr>
+    <th>Naziv</th>
+    <th>Adresa</th>
+    <th>Tip</th>
+    <th>Konobari</th>
+  </tr>
+  <tr *ngFor="let r of restorani">
+    <td>{{r.naziv}}</td>
+    <td>{{r.adresa}}</td>
+    <td>{{r.tip}}</td>
+    <td><div *ngFor="let k of r.konobari">{{k.ime}} {{k.prezime}}</div></td>
+  </tr>
+</table><br>
+Sortitaj <input type="radio" name="sort" [(ngModel)]="sort" [value]="true"> neopadajuće <input type="radio" name="sort" [(ngModel)]="sort" [value]="false"> nerastuće<br>
+restorane po:
+<button (click)="naziv()">Nazivu</button> <button (click)="adresa()">Adresi</button> <button (click)="tip()">Tipu</button><br>
+<hr>Pretraži restorane:<br>
+<input [(ngModel)]="pretragaIme" placeholder="Pretraži po imenu">
+<input [(ngModel)]="pretragaAdresa" placeholder="Pretraži po adresi">
+<input [(ngModel)]="pretragaTip" placeholder="Pretraži po tipu">
+<button (click)="pretraziRestorane()">Pretraži</button>
+<table class="tabela-stil">
+  <tr *ngFor="let r of filtriraniRestorani">
+    <td>{{r.naziv}}</td>
+    <td>{{r.adresa}}</td>
+    <td>{{r.tip}}</td>
+</table>
+<hr>
+Prijavite se:
+<button (click)="login()">Prijavite se</button><br>
+Nemate nalog? Registrujte se:
+<button (click)="register()">Registrujte se</button>
+

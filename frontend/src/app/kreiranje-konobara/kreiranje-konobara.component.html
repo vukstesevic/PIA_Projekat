@@ -1,0 +1,26 @@
+Unesite podatke konobara:<br>
+Korisnicko ime: <input type="text" [(ngModel)]="korisnicko_ime"><br>
+Lozinka:* <input type="password" [(ngModel)]="lozinka"><br>
+Bezbednosno pitanje: <select [(ngModel)]="bezbednosno_pitanje">
+  <option value="Omiljeni sport">Omiljeni sport</option>
+  <option value="Ime kućnog ljubimca">Ime kućnog ljubimca</option>
+  <option value="Najbolji prijatelj iz detinjstva">Najbolji prijatelj iz detinjstva</option>
+  <option value="Najdraži predmet u školi">Najdraži predmet u školi</option>
+  <option value="Najdraži film">Najdraži film</option>
+</select><br>
+Odgovor: <input type="text" [(ngModel)]="odgovor_na_bezbednosno_pitanje"><br>
+Ime: <input type="text" [(ngModel)]="ime"><br>
+Prezime: <input type="text" [(ngModel)]="prezime"><br>
+Pol: <input type="radio" [(ngModel)]="pol" value="M">Muški <input type="radio" [(ngModel)]="pol" value="Ž">Ženski <br>
+Adresa: <input type="text" [(ngModel)]="adresa"><br>
+Kontakt telefon: <input type="text" [(ngModel)]="kontakt_telefon"><br>
+Email: <input type="text" [(ngModel)]="email"><br>
+Profilna slika: <input type="file" (change)="naPromenuFajla($event)" accept="image/png, image/jpeg" #fileInput> {{proukaSlika}}<br>
+Broj kreditne kartice: <input type="text" [(ngModel)]="broj_kreditne_kartice"><br>
+Restoran: <select [(ngModel)]="idr">
+  <option *ngFor="let r of restorani" [value]="r.id">{{r.naziv}}</option>
+  </select><br>
+<button (click)="registruj()">Dodaj konobara</button><br>
+{{poruka}}
+<hr>
+<button (click)="nazad()">Nazad</button>

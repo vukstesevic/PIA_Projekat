@@ -1,0 +1,53 @@
+<button (click)="odjava()">Odjava</button><br>
+<button (click)="nazad()">Nazad</button><br>
+
+Rezervacije korisnika {{korisnik.korisnicko_ime}}<br>
+
+
+<div *ngIf="aktuelne.length>0; else poruka">
+  Aktuelne rezervacije:
+  <table>
+    <tr>
+      <th>Restoran</th>
+      <th>Datum i vreme</th>
+      <th>Zahtev</th>
+    </tr>
+    <tr *ngFor="let f of aktuelne">
+      <td>{{f.vreme |date: "dd-MM-yyy hh:mm"}}</td>
+      <td>{{f.restoran}}</td>
+      <td>{{f.adresa}}</td>
+      <td><button [disabled]="f.mozeSeOtkazati==false" >Otkaži</button></td>
+    </tr>
+  </table>
+</div>
+<ng-template #poruka>
+  <p>Nemate nijednu rezervaciju</p>
+</ng-template>
+
+<div *ngIf="aktuelne.length>0; else arh">
+  Arhiva rezervacija:
+  <table>
+    <tr>
+      <th>Restoran</th>
+      <th>Datum i vreme</th>
+      <th>Zahtev</th>
+    </tr>
+    <tr *ngFor="let f of prosle">
+      <td>{{f.vreme |date: "dd-MM-yyy hh:mm"}}</td>
+      <td>{{f.restoran}}</td>
+      <td>{{f.zahtev}}</td>
+      <td [hidden]="f.ocenjen==true"><button [disabled]="f.bio==false" (click)="oceni(f.id)">Oceni</button></td>
+      <td [hidden]="f.ocenjen==false" >{{f.ocena}}</td>
+      <td [hidden]="f.ocenjen==false" >{{f.komentar}}</td>
+    </tr>
+  </table>
+</div>
+<div [hidden]="bool==false">
+  Ocena:<star-rating [starType]="'svg'"  (ratingChange)="ocenjivanje($event)"></star-rating><br>
+  Komentar:<input type="text" [(ngModel)]="komentar"><br>
+  <button (click)="oceniRezervaciju()">Potvrdi</button>
+</div>
+<ng-template #arh>
+  <p>Nemate nijednu rezervaciju</p>
+</ng-template>
+
