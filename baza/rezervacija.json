@@ -1,0 +1,171 @@
+[{
+  "_id": {
+    "$oid": "668a83691b0a1d3f47cfda8b"
+  },
+  "id": 1,
+  "idR": 1,
+  "restoran": "Burger queen",
+  "korisnik": "Luka",
+  "vreme": {
+    "$date": "2024-07-07T19:00:00.000Z"
+  },
+  "brOsoba": 2,
+  "brStola": 4,
+  "zahtev": "",
+  "status": "prihvacena",
+  "bio": null,
+  "produzena": false,
+  "zaduzenje": "Dragan",
+  "komentarOdbijanje": "",
+  "preko": "forma"
+},
+{
+  "_id": {
+    "$oid": "668a83861b0a1d3f47cfda8f"
+  },
+  "id": 2,
+  "idR": 1,
+  "restoran": "Burger queen",
+  "korisnik": "Luka",
+  "vreme": {
+    "$date": "2024-12-09T17:00:00.000Z"
+  },
+  "brOsoba": 4,
+  "brStola": 1,
+  "zahtev": "",
+  "status": "prihvacena",
+  "bio": null,
+  "produzena": false,
+  "zaduzenje": "Milanka",
+  "komentarOdbijanje": "",
+  "preko": "forma"
+},
+{
+  "_id": {
+    "$oid": "668a83891b0a1d3f47cfda93"
+  },
+  "id": 3,
+  "idR": 1,
+  "restoran": "Burger queen",
+  "korisnik": "Luka",
+  "vreme": {
+    "$date": "2024-12-09T17:00:00.000Z"
+  },
+  "brOsoba": 3,
+  "brStola": 4,
+  "zahtev": "",
+  "status": "prihvacena",
+  "bio": null,
+  "produzena": false,
+  "zaduzenje": "Dušica",
+  "komentarOdbijanje": "",
+  "preko": "forma"
+},
+{
+  "_id": {
+    "$oid": "668a838c1b0a1d3f47cfda97"
+  },
+  "id": 4,
+  "idR": 1,
+  "restoran": "Burger queen",
+  "korisnik": "Luka",
+  "vreme": {
+    "$date": "2024-12-09T17:00:00.000Z"
+  },
+  "brOsoba": 2,
+  "brStola": 0,
+  "zahtev": "",
+  "status": "poslata",
+  "bio": null,
+  "produzena": false,
+  "zaduzenje": "",
+  "komentarOdbijanje": "",
+  "preko": "forma"
+},
+{
+  "_id": {
+    "$oid": "668a85f81b0a1d3f47cfdb28"
+  },
+  "id": 5,
+  "idR": 1,
+  "restoran": "Burger queen",
+  "korisnik": "Antonije",
+  "vreme": {
+    "$date": "2024-07-07T10:00:00.000Z"
+  },
+  "brOsoba": 2,
+  "brStola": 1,
+  "zahtev": "",
+  "status": "prihvacena",
+  "bio": true,
+  "produzena": false,
+  "zaduzenje": "Dušica",
+  "komentarOdbijanje": "",
+  "preko": "forma",
+  "komentar": "Sjajna hrana",
+  "ocena": 5,
+  "ocenjen": true
+},
+{
+  "_id": {
+    "$oid": "668a86011b0a1d3f47cfdb2c"
+  },
+  "id": 6,
+  "idR": 1,
+  "restoran": "Burger queen",
+  "korisnik": "Antonije",
+  "vreme": {
+    "$date": "2024-07-09T10:00:00.000Z"
+  },
+  "brOsoba": 2,
+  "brStola": 0,
+  "zahtev": "",
+  "status": "poslata",
+  "bio": null,
+  "produzena": false,
+  "zaduzenje": "",
+  "komentarOdbijanje": "",
+  "preko": "forma"
+},
+{
+  "_id": {
+    "$oid": "668a86061b0a1d3f47cfdb30"
+  },
+  "id": 7,
+  "idR": 1,
+  "restoran": "Burger queen",
+  "korisnik": "Antonije",
+  "vreme": {
+    "$date": "2024-07-09T10:00:00.000Z"
+  },
+  "brOsoba": 9,
+  "brStola": 0,
+  "zahtev": "",
+  "status": "poslata",
+  "bio": null,
+  "produzena": false,
+  "zaduzenje": "",
+  "komentarOdbijanje": "",
+  "preko": "forma"
+},
+{
+  "_id": {
+    "$oid": "668a86111b0a1d3f47cfdb34"
+  },
+  "id": 8,
+  "idR": 1,
+  "restoran": "Burger queen",
+  "korisnik": "Antonije",
+  "vreme": {
+    "$date": "2024-07-09T09:00:00.000Z"
+  },
+  "brOsoba": 3,
+  "brStola": 0,
+  "zahtev": "",
+  "status": "poslata",
+  "bio": null,
+  "produzena": false,
+  "zaduzenje": "",
+  "komentarOdbijanje": "",
+  "preko": "forma"
+}]

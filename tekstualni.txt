@@ -1,0 +1,15 @@
+npm install chart.js 
+npm install crypto-js   
+npm install express crypto  
+npm install --save-dev @types/express
+npm install angular-star-rating css-star-rating --save
+npm install leaflet-control-geocoder
+npm install leaflet leaflet-control-geocoder
+npm install @types/leaflet --save-dev
+npm install @asymmetrik/ngx-leaflet 
+npm install leaflet
+npm install @ng-bootstrap/ng-bootstrap@15.1.2
+npm install multer                   
+npm install express multer 
+npm i --save-dev @types/multer   
+ng add @angular/localize 

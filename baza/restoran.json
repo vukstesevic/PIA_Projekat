@@ -1,0 +1,234 @@
+[{
+  "_id": {
+    "$oid": "668a81e11b0a1d3f47cfda38"
+  },
+  "id": 1,
+  "naziv": "Burger queen",
+  "adresa": "Kneza Miloša 70",
+  "tip": "Američka",
+  "opis": "Najbolji burgeri",
+  "konobari": [],
+  "telefon": "0672233334",
+  "komentari": [],
+  "brStolova": 4,
+  "radnoVreme": [
+    "08:00",
+    "23:00"
+  ],
+  "plan": [
+    {
+      "x": 15.350006103515625,
+      "y": 82.46665954589844,
+      "r": 0,
+      "brOsoba": 5,
+      "tip": "sto",
+      "redniBr": 1
+    },
+    {
+      "x": 44.350006103515625,
+      "y": 224.46665954589844,
+      "r": 0,
+      "brOsoba": 1,
+      "tip": "sto",
+      "redniBr": 2
+    },
+    {
+      "x": 88.35000610351562,
+      "y": 68.46665954589844,
+      "r": 0,
+      "brOsoba": 1,
+      "tip": "sto",
+      "redniBr": 3
+    },
+    {
+      "x": 149.35000610351562,
+      "y": 156.46665954589844,
+      "r": 0,
+      "brOsoba": 5,
+      "tip": "sto",
+      "redniBr": 4
+    },
+    {
+      "x": 186.35000610351562,
+      "y": 53.80000305175781,
+      "r": 0,
+      "brOsoba": 1,
+      "tip": "kuhinja",
+      "redniBr": 0
+    },
+    {
+      "x": 185.35000610351562,
+      "y": 261.8000030517578,
+      "r": 0,
+      "brOsoba": 1,
+      "tip": "toalet",
+      "redniBr": 0
+    }
+  ],
+  "meni": [
+    {
+      "naziv": "Burger",
+      "cena": 600,
+      "opis": "junetina, krastavac, sir",
+      "slika": "93-cute-burger-character.jpg"
+    },
+    {
+      "naziv": "Pomfrit",
+      "cena": 200,
+      "opis": "krompir",
+      "slika": "200px-Fries_Model.png"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668a82401b0a1d3f47cfda48"
+  },
+  "id": 2,
+  "naziv": "Restoran Slavija",
+  "adresa": "Resavska 78",
+  "tip": "Domaća",
+  "opis": "Najbolja domaća kuhinja",
+  "konobari": [],
+  "telefon": "0643477778",
+  "komentari": [],
+  "brStolova": 3,
+  "radnoVreme": [
+    "06:00",
+    "23:00"
+  ],
+  "plan": [
+    {
+      "x": 67.35000610351562,
+      "y": 43.4666748046875,
+      "r": 0,
+      "brOsoba": 5,
+      "tip": "sto",
+      "redniBr": 1
+    },
+    {
+      "x": 184.35000610351562,
+      "y": 60.80000305175781,
+      "r": 0,
+      "brOsoba": 5,
+      "tip": "sto",
+      "redniBr": 2
+    },
+    {
+      "x": 69.35000610351562,
+      "y": 123.80000305175781,
+      "r": 0,
+      "brOsoba": 6,
+      "tip": "sto",
+      "redniBr": 3
+    },
+    {
+      "x": 227.35000610351562,
+      "y": 172.13333129882812,
+      "r": 0,
+      "brOsoba": 1,
+      "tip": "kuhinja",
+      "redniBr": 0
+    },
+    {
+      "x": 54.350006103515625,
+      "y": 246.13333129882812,
+      "r": 0,
+      "brOsoba": 1,
+      "tip": "toalet",
+      "redniBr": 0
+    }
+  ],
+  "meni": [
+    {
+      "naziv": "Pohovana piletina",
+      "cena": 450,
+      "opis": "12 nagetsa",
+      "slika": "200px-Curry_Ingredient_Fried_Food_Sprite.png"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "668a826c1b0a1d3f47cfda4f"
+  },
+  "id": 3,
+  "naziv": "Kraljevski suši",
+  "adresa": "Požeška 104",
+  "tip": "Japanski",
+  "opis": "Najbolji suši",
+  "konobari": [],
+  "telefon": "0653477778",
+  "komentari": [],
+  "brStolova": 5,
+  "radnoVreme": [
+    "09:00",
+    "21:00"
+  ],
+  "plan": [
+    {
+      "x": 61.66667175292969,
+      "y": 60.600006103515625,
+      "r": 0,
+      "brOsoba": 5,
+      "tip": "sto",
+      "redniBr": 1
+    },
+    {
+      "x": 257.6666717529297,
+      "y": 42.600006103515625,
+      "r": 0,
+      "brOsoba": 4,
+      "tip": "sto",
+      "redniBr": 2
+    },
+    {
+      "x": 151.6666717529297,
+      "y": 100.60000610351562,
+      "r": 0,
+      "brOsoba": 4,
+      "tip": "sto",
+      "redniBr": 3
+    },
+    {
+      "x": 39.66667175292969,
+      "y": 174.60000610351562,
+      "r": 0,
+      "brOsoba": 3,
+      "tip": "sto",
+      "redniBr": 4
+    },
+    {
+      "x": 235.6666717529297,
+      "y": 155.60000610351562,
+      "r": 0,
+      "brOsoba": 3,
+      "tip": "sto",
+      "redniBr": 5
+    },
+    {
+      "x": 45.66667175292969,
+      "y": 252.60000610351562,
+      "r": 0,
+      "brOsoba": 1,
+      "tip": "kuhinja",
+      "redniBr": 0
+    },
+    {
+      "x": 181.6666717529297,
+      "y": 245.60000610351562,
+      "r": 0,
+      "brOsoba": 1,
+      "tip": "toalet",
+      "redniBr": 0
+    }
+  ],
+  "meni": [
+    {
+      "naziv": "Suši rolnice",
+      "cena": 900,
+      "opis": "pirinač, riba",
+      "slika": "84774-square-art-pixel-rectangle-cat-hd-image-free-png-thumb.png"
+    }
+  ]
+}]

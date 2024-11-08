@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "668a83571b0a1d3f47cfda87"
+  },
+  "id": 1,
+  "korisnik": "Luka",
+  "idR": 1,
+  "restoran": "Burger queen",
+  "vreme": {
+    "$date": "2024-06-07T12:00:23.369Z"
+  },
+  "jela": "Burger x2Pomfrit",
+  "cena": 1400,
+  "status": "prihvaceno",
+  "vremeDostave": 40,
+  "vremeDostaveString": ""
+},
+{
+  "_id": {
+    "$oid": "668a85821b0a1d3f47cfdb01"
+  },
+  "id": 2,
+  "korisnik": "Luka",
+  "idR": 3,
+  "restoran": "Kraljevski suši",
+  "vreme": {
+    "$date": "2024-07-07T12:09:38.535Z"
+  },
+  "jela": "Suši rolnice x3",
+  "cena": 2700,
+  "status": "poslato",
+  "vremeDostave": 0,
+  "vremeDostaveString": ""
+},
+{
+  "_id": {
+    "$oid": "668a87a71b0a1d3f47cfdb8c"
+  },
+  "id": 3,
+  "korisnik": "Antonije",
+  "idR": 2,
+  "restoran": "Restoran Slavija",
+  "vreme": {
+    "$date": "2024-07-07T12:18:47.171Z"
+  },
+  "jela": "Pohovana piletina x2",
+  "cena": 900,
+  "status": "poslato",
+  "vremeDostave": 0,
+  "vremeDostaveString": ""
+}]
