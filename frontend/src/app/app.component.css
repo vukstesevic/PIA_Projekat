@@ -1,0 +1,154 @@
+.body {
+  align-items:center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  button {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #000000;
+    padding: 7px 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  border-color: #999999;
+  cursor: not-allowed; /* Pokazivač za onemogućeno dugme */
+}
+
+button:hover {
+    background-color: #eff6ff;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+
+table {
+  width: 40%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #9c9a9a;
+  font-weight: bold;
+}
+
+
+input[type="text"], input[type="number"], input[type="password"], textarea, select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.meni{
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  min-height:10vh;
+}
+
+.header, .footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.col-sm-1.sides{
+  background-color: gray;
+  padding: 0px;
+}
+
+.col-sm-10{
+  min-height: 80vh;
+  padding: 0px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  flex: 0 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+  margin-top: auto;
+  min-height:10vh;
+}
+
+.body {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+

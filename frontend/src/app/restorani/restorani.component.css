@@ -1,0 +1,17 @@
+#map{
+  height: 40vh;
+  width: 30lh;
+}
+
+#canvas{
+  border: 1px solid black;
+}
+
+
+.tabela-stil, .tabela-stil td, .tabela-stil th {
+  border: 1px solid black;
+}
+
+.tabela-stil {
+  border-collapse: collapse;
+}
